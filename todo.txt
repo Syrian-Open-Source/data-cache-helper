@@ -1,0 +1,32 @@
+* isEmpty():
+    - to check if the cache store is empty or not.
+    - if pass the key to it will check the value of this key.
+    - params: (key => string, not required)
+    - return: (boolean)
+    - data.isEmpty() => true / false
+    - data.isEmpty('key') => true / false
+
+* has():
+    - to check if specific key is exist or not.
+    - params: (key => string, required)
+    - return: (boolean)
+    - data.has('key') => true / false
+
+* keys():
+    - to return all keys used in the data cache store.
+    - params: none
+    - return: (array of string)
+    - data.keys() => ['key 1', 'key 2', ...]
+
+* values():
+    - to return all data cached.
+    - params: none
+    - return: (any)
+    - data.values() => ['name'], 'name', [{name: 'name'}], false...
+
+* clear():
+    - to clear all data in cache store
+    - if pass key to it will clear data for this key store
+    - params: (key => string, not required)
+    - return: void
+    - data.clear()

@@ -1,0 +1,47 @@
+{
+  "name": "data-cache-helper",
+  "description": "- This package will help you to cache data in multiple way in your local machine memory - It's provide many cool feature.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "pack": "npm pack --pack-destination ~",
+    "test": "jest --config jestconfig.json",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "version": "1.0.10",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Mohammed-dev-11/data-cache-helper.git"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "Data",
+    "Data Caching",
+    "Cache",
+    "Data Cache"
+  ],
+  "author": "Mohammed Abdo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/Mohammed-dev-11/data-cache-helper/issues"
+  },
+  "homepage": "https://gitlab.com/Mohammed-dev-11/data-cache-helper#readme",
+  "devDependencies": {
+    "@types/jest": "^29.2.1",
+    "jest": "^29.2.2",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.0.3",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.8.4"
+  }
+}
